@@ -115,22 +115,27 @@
 	//	public static string ConvertMiladiToShamsi(System.DateTime time)
 	//	{
 	//		System.Globalization.PersianCalendar
-	//			oPersianCalendar = new System.Globalization.PersianCalendar();
+	//			persianCalendar = new System.Globalization.PersianCalendar();
 
-	//		int intYear =
-	//			oPersianCalendar.GetYear(time);
+	//		int year =
+	//			persianCalendar.GetYear(time);
 
-	//		int intMonth =
-	//			oPersianCalendar.GetMonth(time);
+	//		int month =
+	//			persianCalendar.GetMonth(time);
 
-	//		int intDay =
-	//			oPersianCalendar.GetDayOfMonth(time);
+	//		int day =
+	//			persianCalendar.GetDayOfMonth(time);
 
-	//		string strResult =
-	//			string.Format("{0}/{1}/{2}",
-	//			intYear, intMonth.ToString().PadLeft(2, '0'), intDay.ToString().PadLeft(2, '0'));
+	//		//string result =
+	//		//	$"{year}/{month}/{day}";
 
-	//		return (strResult);
+	//		//string result =
+	//		//	$"{ year }/{ month }/{ day }";
+
+	//		string result =
+	//			$"{ year }/{ month.ToString().PadLeft(2, '0') }/{ day.ToString().PadLeft(2, '0') }";
+
+	//		return (result);
 	//	}
 	//}
 
@@ -139,24 +144,90 @@
 		public static PersianDate ConvertMiladiToShamsi(System.DateTime time)
 		{
 			System.Globalization.PersianCalendar
-				oPersianCalendar = new System.Globalization.PersianCalendar();
+				persianCalendar = new System.Globalization.PersianCalendar();
 
-			int intYear =
-				oPersianCalendar.GetYear(time);
+			int year =
+				persianCalendar.GetYear(time);
 
-			int intMonth =
-				oPersianCalendar.GetMonth(time);
+			int month =
+				persianCalendar.GetMonth(time);
 
-			int intDay =
-				oPersianCalendar.GetDayOfMonth(time);
+			int day =
+				persianCalendar.GetDayOfMonth(time);
 
-			PersianDate oPersianDate = new PersianDate();
+			PersianDate persianDate = new PersianDate();
 
-			oPersianDate.Day = intDay;
-			oPersianDate.Year = intYear;
-			oPersianDate.Month = intMonth;
+			persianDate.Day = day;
+			persianDate.Year = year;
+			persianDate.Month = month;
 
-			return (oPersianDate);
+			return (persianDate);
+		}
+
+		/// <summary>
+		/// "        Ali                Reza                         Alavi        "
+		/// ->
+		/// "Ali Reza Alavi"
+		/// </summary>
+		public static string FixText(string text)
+		{
+			// **************************************************
+			//return (text);
+			// **************************************************
+
+			// **************************************************
+			//text = text.Trim();
+
+			//return (text);
+			// **************************************************
+
+			// **************************************************
+			//if (text == null)
+			//{
+			//	return (string.Empty);
+			//}
+
+			//text = text.Trim();
+
+			//return (text);
+			// **************************************************
+
+			// **************************************************
+			//if (text == null)
+			//{
+			//	return (string.Empty);
+			//}
+
+			//text = text.Trim();
+
+			//text = text.Replace("     ", " ");
+			//text = text.Replace("    ", " ");
+			//text = text.Replace("   ", " ");
+			//text = text.Replace("  ", " ");
+
+			//return (text);
+			// **************************************************
+
+			// **************************************************
+			if (text == null)
+			{
+				return (string.Empty);
+			}
+
+			text = text.Trim();
+
+			while (text.Contains("  "))
+			{
+				text = text.Replace("  ", " ");
+			}
+
+			return (text);
+			// **************************************************
+
+			// "Ali     Reza Alavi"
+			// "Ali   Reza Alavi"
+			// "Ali  Reza Alavi"
+			// "Ali Reza Alavi"
 		}
 	}
 }

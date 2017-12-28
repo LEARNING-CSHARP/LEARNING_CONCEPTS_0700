@@ -3,9 +3,9 @@
 	public class SomeClass
 	{
 		public int PublicField;
-		private int _privateField;
+		private int privateField;
 
 		public static int PublicStaticField;
-		private static int _privateStaticField;
+		private static int privateStaticField;
 	}
 }
