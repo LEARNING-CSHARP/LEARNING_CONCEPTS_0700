@@ -5,28 +5,30 @@
 		static void Main(string[] args)
 		{
 			// **************************************************
-			SomeClass someClass1 = new SomeClass();
+			SomeClass someClass = new SomeClass();
 
-			someClass1.PublicField = 10;
-			//someClass1._privateField = 20;
-			//someClass1.PublicStaticField = 30;
-			//someClass1._privateStaticField = 40;
+			someClass.PublicField = 10;
+			//someClass.privateField = 20;
+			//someClass.PublicStaticField = 30;
+			//someClass.privateStaticField = 40;
 			// **************************************************
 
 			// **************************************************
 			//SomeClass.PublicField = 10;
-			//SomeClass._privateField = 20;
+			//SomeClass.privateField = 20;
 			SomeClass.PublicStaticField = 30;
-			//SomeClass._privateStaticField = 40;
+			//SomeClass.privateStaticField = 40;
 			// **************************************************
 
 			// **************************************************
 			//Utility utility = new Utility();
-			//utility.ConvertMiladiToShamsi();
+			//string shamsi =
+			//	utility.ConvertMiladiToShamsi(System.DateTime.Now);
 			// **************************************************
 
 			// **************************************************
-			//Utility.ConvertMiladiToShamsi();
+			//string shamsi =
+			//	Utility.ConvertMiladiToShamsi(System.DateTime.Now);
 			// **************************************************
 
 			// **************************************************
@@ -37,11 +39,11 @@
 			// **************************************************
 
 			// **************************************************
-			PersianDate persinDate =
+			PersianDate persianDate =
 				Utility.ConvertMiladiToShamsi(System.DateTime.Now);
 
-			System.Console.WriteLine(persinDate.GetString());
-			System.Console.WriteLine("Month: " + persinDate.Month);
+			System.Console.WriteLine(persianDate.GetString());
+			System.Console.WriteLine("Month: " + persianDate.Month);
 			// **************************************************
 
 			System.Console.Write("Press [ENTER] To Exit...");
