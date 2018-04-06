@@ -6,11 +6,11 @@
 		{
 		}
 
-		public int Day { get; set; }
+		public int Day;
 
-		public int Month { get; set; }
+		public int Month;
 
-		public int Year { get; set; }
+		public int Year;
 
 		public string GetString()
 		{
