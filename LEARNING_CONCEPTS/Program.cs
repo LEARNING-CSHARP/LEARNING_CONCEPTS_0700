@@ -21,21 +21,22 @@
 			// **************************************************
 
 			// **************************************************
-			//Utility utility = new Utility();
-			//string shamsi =
-			//	utility.ConvertMiladiToShamsi(System.DateTime.Now);
+			Utility1 utility1 = new Utility1();
+
+			string shamsi1 =
+				utility1.ConvertMiladiToShamsi(System.DateTime.Now);
 			// **************************************************
 
 			// **************************************************
-			//string shamsi =
-			//	Utility.ConvertMiladiToShamsi(System.DateTime.Now);
+			string shamsi2 =
+				Utility2.ConvertMiladiToShamsi(System.DateTime.Now);
 			// **************************************************
 
 			// **************************************************
-			//string shamsi =
-			//	Utility.ConvertMiladiToShamsi(System.DateTime.Now);
+			string shamsi8 =
+				Utility8.ConvertMiladiToShamsi(System.DateTime.Now);
 
-			//System.Console.WriteLine(shamsi);
+			System.Console.WriteLine(shamsi8);
 			// **************************************************
 
 			// **************************************************
