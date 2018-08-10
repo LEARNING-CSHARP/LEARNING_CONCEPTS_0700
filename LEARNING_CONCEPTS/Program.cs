@@ -40,11 +40,11 @@
 			// **************************************************
 
 			// **************************************************
-			PersianDate persianDate =
-				Utility.ConvertMiladiToShamsi(System.DateTime.Now);
+			//PersianDate persianDate =
+			//	Utility.ConvertMiladiToShamsi(System.DateTime.Now);
 
-			System.Console.WriteLine(persianDate.GetString());
-			System.Console.WriteLine("Month: " + persianDate.Month);
+			//System.Console.WriteLine(persianDate.GetString());
+			//System.Console.WriteLine("Month: " + persianDate.Month);
 			// **************************************************
 
 			System.Console.Write("Press [ENTER] To Exit...");

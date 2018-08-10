@@ -159,8 +159,8 @@ namespace LEARNING_CONCEPTS
 			//string result =
 			//	$"{year}/{month}/{day}";
 
-			//string result =
-			//	$"{ year }/{ month }/{ day }";
+			string result =
+				$"{ year }/{ month }/{ day }";
 
 			//ایراد
 
@@ -169,8 +169,8 @@ namespace LEARNING_CONCEPTS
 			//1397/11/7  -> 1397 / 11 / 07
 			//1397/1/7   -> 1397 / 01 / 07
 
-			string result =
-				$"{ year }/{ month.ToString().PadLeft(2, '0') }/{ day.ToString().PadLeft(2, '0') }";
+			//string result =
+			//	$"{ year }/{ month.ToString().PadLeft(2, '0') }/{ day.ToString().PadLeft(2, '0') }";
 
 			return (result);
 		}
