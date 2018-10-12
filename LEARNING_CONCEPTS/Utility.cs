@@ -4,7 +4,7 @@
 	{
 		public string ConvertMiladiToShamsi(System.DateTime date)
 		{
-			return (null);
+			return null;
 		}
 	}
 }
@@ -39,7 +39,7 @@ namespace LEARNING_CONCEPTS
 	{
 		public static string ConvertMiladiToShamsi(System.DateTime date)
 		{
-			return (null);
+			return null;
 		}
 	}
 }
@@ -56,7 +56,7 @@ namespace LEARNING_CONCEPTS
 
 		public static string ConvertMiladiToShamsi(System.DateTime date)
 		{
-			return (null);
+			return null;
 		}
 	}
 }
@@ -73,7 +73,7 @@ namespace LEARNING_CONCEPTS
 
 		public static string ConvertMiladiToShamsi(System.DateTime date)
 		{
-			return (null);
+			return null;
 		}
 	}
 }
@@ -90,12 +90,12 @@ namespace LEARNING_CONCEPTS
 
 		public static string ConvertMiladiToShamsi(System.DateTime date)
 		{
-			return (null);
+			return null;
 		}
 
 		public System.DateTime ConvertShamsiToMiladi(string persianDate)
 		{
-			return (System.DateTime.Now);
+			return System.DateTime.Now;
 		}
 	}
 }
@@ -108,12 +108,12 @@ namespace LEARNING_CONCEPTS
 //	{
 //		public static string ConvertMiladiToShamsi(System.DateTime date)
 //		{
-//			return (null);
+//			return null;
 //		}
 
 //		public System.DateTime ConvertShamsiToMiladi(string persianDate)
 //		{
-//			return (System.DateTime.Now);
+//			return System.DateTime.Now;
 //		}
 //	}
 //}
@@ -126,12 +126,12 @@ namespace LEARNING_CONCEPTS
 	{
 		public static string ConvertMiladiToShamsi(System.DateTime date)
 		{
-			return (null);
+			return null;
 		}
 
 		public static System.DateTime ConvertShamsiToMiladi(string persianDate)
 		{
-			return (System.DateTime.Now);
+			return System.DateTime.Now;
 		}
 	}
 }
@@ -155,6 +155,12 @@ namespace LEARNING_CONCEPTS
 
 			int day =
 				persianCalendar.GetDayOfMonth(time);
+
+			//string result =
+			//	year + "/" + month + "/" + day;
+
+			//string result =
+			//	string.Format("{0}/{1}/{2}", year, month, day);
 
 			//string result =
 			//	$"{year}/{month}/{day}";

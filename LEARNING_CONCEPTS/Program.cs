@@ -1,8 +1,12 @@
 ﻿namespace LEARNING_CONCEPTS
 {
-	class Program
+	internal static class Program
 	{
-		static void Main(string[] args)
+		static Program()
+		{
+		}
+
+		internal static void Main(string[] args)
 		{
 			// **************************************************
 			SomeClass someClass = new SomeClass();
