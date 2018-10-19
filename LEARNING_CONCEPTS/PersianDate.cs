@@ -2,8 +2,15 @@
 {
 	public class PersianDate
 	{
-		public PersianDate()
+		//public PersianDate()
+		//{
+		//}
+
+		public PersianDate(int year, int month, int day)
 		{
+			Day = day;
+			Year = year;
+			Month = month;
 		}
 
 		public int Day;

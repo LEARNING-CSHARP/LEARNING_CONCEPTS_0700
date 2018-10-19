@@ -209,8 +209,11 @@ namespace LEARNING_CONCEPTS
 			//persianDate.Year = year;
 			//persianDate.Month = month;
 
+			//PersianDate persianDate =
+			//	new PersianDate() { Year = year, Month = month, Day = day };
+
 			PersianDate persianDate =
-				new PersianDate() { Year = year, Month = month, Day = day };
+				new PersianDate(year: year, month: month, day: day);
 
 			return persianDate;
 		}
