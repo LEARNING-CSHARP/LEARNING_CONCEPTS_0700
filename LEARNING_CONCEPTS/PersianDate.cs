@@ -17,7 +17,7 @@
 			string result =
 				$"{ Year }/{ Month.ToString().PadLeft(2, '0') }/{ Day.ToString().PadLeft(2, '0') }";
 
-			return (result);
+			return result;
 		}
 	}
 }

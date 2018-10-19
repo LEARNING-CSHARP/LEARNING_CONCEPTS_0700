@@ -165,20 +165,20 @@ namespace LEARNING_CONCEPTS
 			//string result =
 			//	$"{year}/{month}/{day}";
 
-			string result =
-				$"{ year }/{ month }/{ day }";
+			//string result =
+			//	$"{ year }/{ month }/{ day }";
 
 			//ایراد
 
-			//1397/11/17 -> OK
-			//1397/1/17  -> 1397 / 01 / 17
-			//1397/11/7  -> 1397 / 11 / 07
-			//1397/1/7   -> 1397 / 01 / 07
+			//1397/11/17 -> 1397/11/17 -> OK
+			//1397/1/17  -> 1397/01/17
+			//1397/11/7  -> 1397/11/07
+			//1397/1/7   -> 1397/01/07
 
-			//string result =
-			//	$"{ year }/{ month.ToString().PadLeft(2, '0') }/{ day.ToString().PadLeft(2, '0') }";
+			string result =
+				$"{ year }/{ month.ToString().PadLeft(2, '0') }/{ day.ToString().PadLeft(2, '0') }";
 
-			return (result);
+			return result;
 		}
 	}
 }
@@ -212,7 +212,7 @@ namespace LEARNING_CONCEPTS
 			PersianDate persianDate =
 				new PersianDate() { Year = year, Month = month, Day = day };
 
-			return (persianDate);
+			return persianDate;
 		}
 	}
 }
@@ -231,30 +231,30 @@ namespace LEARNING_CONCEPTS
 		public static string FixText(string text)
 		{
 			// **************************************************
-			//return (text);
+			//return text;
 			// **************************************************
 
 			// **************************************************
 			//text = text.Trim();
 
-			//return (text);
+			//return text;
 			// **************************************************
 
 			// **************************************************
 			//if (text == null)
 			//{
-			//	return (string.Empty);
+			//	return string.Empty;
 			//}
 
 			//text = text.Trim();
 
-			//return (text);
+			//return text;
 			// **************************************************
 
 			// **************************************************
 			//if (text == null)
 			//{
-			//	return (string.Empty);
+			//	return string.Empty;
 			//}
 
 			//text = text.Trim();
@@ -266,13 +266,13 @@ namespace LEARNING_CONCEPTS
 
 			// روش احمقانه
 
-			//return (text);
+			//return text;
 			// **************************************************
 
 			// **************************************************
 			if (text == null)
 			{
-				return (string.Empty);
+				return string.Empty;
 			}
 
 			text = text.Trim();
@@ -282,7 +282,7 @@ namespace LEARNING_CONCEPTS
 				text = text.Replace("  ", " ");
 			}
 
-			return (text);
+			return text;
 			// **************************************************
 
 			// "Ali     Reza Alavi"
