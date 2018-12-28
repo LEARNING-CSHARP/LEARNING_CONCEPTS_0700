@@ -13,6 +13,7 @@
 
 			someClass.PublicField = 10;
 			//someClass.privateField = 20;
+
 			//someClass.PublicStaticField = 30;
 			//someClass.privateStaticField = 40;
 			// **************************************************
@@ -20,6 +21,7 @@
 			// **************************************************
 			//SomeClass.PublicField = 10;
 			//SomeClass.privateField = 20;
+
 			SomeClass.PublicStaticField = 30;
 			//SomeClass.privateStaticField = 40;
 			// **************************************************
@@ -37,10 +39,10 @@
 			// **************************************************
 
 			// **************************************************
-			string shamsi8 =
-				Utility8.ConvertMiladiToShamsi(System.DateTime.Now);
+			//string shamsi8 =
+			//	Utility8.ConvertMiladiToShamsi(System.DateTime.Now);
 
-			System.Console.WriteLine(shamsi8);
+			//System.Console.WriteLine(shamsi8);
 			// **************************************************
 
 			// **************************************************
@@ -53,7 +55,7 @@
 			System.Console.WriteLine("Year: " + persianDate.Year);
 			// **************************************************
 
-			System.Console.Write("Press [ENTER] To Exit...");
+			System.Console.Write("Press [ENTER] To Exit... ");
 			System.Console.ReadLine();
 		}
 	}
