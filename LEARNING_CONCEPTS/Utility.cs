@@ -168,6 +168,8 @@ namespace LEARNING_CONCEPTS
 			//string result =
 			//	$"{ year }/{ month }/{ day }";
 
+			//return result;
+
 			//ایراد
 
 			//1397/11/17 -> 1397/11/17 -> OK
@@ -211,6 +213,33 @@ namespace LEARNING_CONCEPTS
 
 			//PersianDate persianDate =
 			//	new PersianDate() { Year = year, Month = month, Day = day };
+
+			//PersianDate persianDate =
+			//	new PersianDate { Year = year, Month = month, Day = day };
+
+			//PersianDate persianDate =
+			//	new PersianDate()
+			//	{
+			//		Year = year,
+			//		Month = month,
+			//		Day = day
+			//	};
+
+			//PersianDate persianDate =
+			//	new PersianDate()
+			//	{
+			//		Year = year,
+			//		Month = month,
+			//		Day = day,
+			//	};
+
+			//PersianDate persianDate =
+			//	new PersianDate()
+			//	{
+			//		Day = day,
+			//		Year = year,
+			//		Month = month,
+			//	};
 
 			PersianDate persianDate =
 				new PersianDate(year: year, month: month, day: day);

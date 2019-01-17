@@ -55,6 +55,20 @@
 			System.Console.WriteLine("Year: " + persianDate.Year);
 			// **************************************************
 
+			// **************************************************
+			System.DateTime birthDate =
+				new System.DateTime(year: 1973, month: 2, day: 17);
+
+			persianDate =
+				Utility.ConvertMiladiToShamsi(birthDate);
+
+			System.Console.WriteLine();
+			System.Console.WriteLine(persianDate.GetString());
+			System.Console.WriteLine("Day: " + persianDate.Day);
+			System.Console.WriteLine("Month: " + persianDate.Month);
+			System.Console.WriteLine("Year: " + persianDate.Year);
+			// **************************************************
+
 			System.Console.Write("Press [ENTER] To Exit... ");
 			System.Console.ReadLine();
 		}
