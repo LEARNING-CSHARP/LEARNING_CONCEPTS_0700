@@ -177,8 +177,14 @@ namespace LEARNING_CONCEPTS
 			//1397/11/7  -> 1397/11/07
 			//1397/1/7   -> 1397/01/07
 
+			string dayString =
+				day.ToString().PadLeft(2, '0');
+
+			string monthString =
+				month.ToString().PadLeft(2, '0');
+
 			string result =
-				$"{ year }/{ month.ToString().PadLeft(2, '0') }/{ day.ToString().PadLeft(2, '0') }";
+				$"{ year }/{ monthString }/{ dayString }";
 
 			return result;
 		}
@@ -205,18 +211,20 @@ namespace LEARNING_CONCEPTS
 			int day =
 				persianCalendar.GetDayOfMonth(time);
 
+			// **************************************************
 			//PersianDate persianDate = new PersianDate();
 
 			//persianDate.Day = day;
 			//persianDate.Year = year;
 			//persianDate.Month = month;
+			// **************************************************
 
+			// **************************************************
 			//PersianDate persianDate =
 			//	new PersianDate() { Year = year, Month = month, Day = day };
+			// **************************************************
 
-			//PersianDate persianDate =
-			//	new PersianDate { Year = year, Month = month, Day = day };
-
+			// **************************************************
 			//PersianDate persianDate =
 			//	new PersianDate()
 			//	{
@@ -224,22 +232,37 @@ namespace LEARNING_CONCEPTS
 			//		Month = month,
 			//		Day = day
 			//	};
+			// **************************************************
 
+			// **************************************************
 			//PersianDate persianDate =
-			//	new PersianDate()
+			//	new PersianDate
+			//	{
+			//		Year = year,
+			//		Month = month,
+			//		Day = day
+			//	};
+			// **************************************************
+
+			// **************************************************
+			//PersianDate persianDate =
+			//	new PersianDate
 			//	{
 			//		Year = year,
 			//		Month = month,
 			//		Day = day,
 			//	};
+			// **************************************************
 
+			// **************************************************
 			//PersianDate persianDate =
-			//	new PersianDate()
+			//	new PersianDate
 			//	{
 			//		Day = day,
 			//		Year = year,
 			//		Month = month,
 			//	};
+			// **************************************************
 
 			PersianDate persianDate =
 				new PersianDate(year: year, month: month, day: day);

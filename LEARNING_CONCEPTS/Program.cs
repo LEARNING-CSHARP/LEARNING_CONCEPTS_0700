@@ -43,6 +43,13 @@
 			//	Utility8.ConvertMiladiToShamsi(System.DateTime.Now);
 
 			//System.Console.WriteLine(shamsi8);
+
+			//// shamsi8 = "1397/11/01"
+
+			//int monthInt =
+			//	System.Convert.ToInt32(shamsi8.Substring(startIndex: 5, length: 2));
+
+			//System.Console.WriteLine($"Month: { monthInt }");
 			// **************************************************
 
 			// **************************************************
