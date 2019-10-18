@@ -178,10 +178,10 @@ namespace LEARNING_CONCEPTS
 			//1397/1/7   -> 1397/01/07
 
 			string dayString =
-				day.ToString().PadLeft(2, '0');
+				day.ToString().PadLeft(totalWidth: 2, paddingChar: '0');
 
 			string monthString =
-				month.ToString().PadLeft(2, '0');
+				month.ToString().PadLeft(totalWidth: 2, paddingChar: '0');
 
 			string result =
 				$"{ year }/{ monthString }/{ dayString }";
@@ -314,12 +314,12 @@ namespace LEARNING_CONCEPTS
 
 			//text = text.Trim();
 
-			//text = text.Replace("  ", " ");
-			//text = text.Replace("   ", " ");
-			//text = text.Replace("    ", " ");
-			//text = text.Replace("     ", " ");
-
 			// روش احمقانه
+
+			//text = text.Replace("     ", " ");
+			//text = text.Replace("    ", " ");
+			//text = text.Replace("   ", " ");
+			//text = text.Replace("  ", " ");
 
 			//return text;
 			// **************************************************
@@ -334,7 +334,8 @@ namespace LEARNING_CONCEPTS
 
 			while (text.Contains("  "))
 			{
-				text = text.Replace("  ", " ");
+				text =
+					text.Replace("  ", " ");
 			}
 
 			return text;
