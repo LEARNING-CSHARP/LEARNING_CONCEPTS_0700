@@ -2,7 +2,7 @@
 {
 	public class Utility1
 	{
-		public string ConvertMiladiToShamsi(System.DateTime date)
+		public string ConvertMiladiToShamsi(System.DateTime dateTime)
 		{
 			return null;
 		}
@@ -37,7 +37,7 @@ namespace LEARNING_CONCEPTS
 {
 	public class Utility2
 	{
-		public static string ConvertMiladiToShamsi(System.DateTime date)
+		public static string ConvertMiladiToShamsi(System.DateTime dateTime)
 		{
 			return null;
 		}
@@ -54,7 +54,7 @@ namespace LEARNING_CONCEPTS
 		{
 		}
 
-		public static string ConvertMiladiToShamsi(System.DateTime date)
+		public static string ConvertMiladiToShamsi(System.DateTime dateTime)
 		{
 			return null;
 		}
@@ -71,7 +71,7 @@ namespace LEARNING_CONCEPTS
 		{
 		}
 
-		public static string ConvertMiladiToShamsi(System.DateTime date)
+		public static string ConvertMiladiToShamsi(System.DateTime dateTime)
 		{
 			return null;
 		}
@@ -88,7 +88,7 @@ namespace LEARNING_CONCEPTS
 		{
 		}
 
-		public static string ConvertMiladiToShamsi(System.DateTime date)
+		public static string ConvertMiladiToShamsi(System.DateTime dateTime)
 		{
 			return null;
 		}
@@ -106,7 +106,7 @@ namespace LEARNING_CONCEPTS
 //{
 //	public static class Utility6
 //	{
-//		public static string ConvertMiladiToShamsi(System.DateTime date)
+//		public static string ConvertMiladiToShamsi(System.DateTime dateTime)
 //		{
 //			return null;
 //		}
@@ -124,7 +124,7 @@ namespace LEARNING_CONCEPTS
 {
 	public static class Utility7
 	{
-		public static string ConvertMiladiToShamsi(System.DateTime date)
+		public static string ConvertMiladiToShamsi(System.DateTime dateTime)
 		{
 			return null;
 		}
@@ -142,19 +142,19 @@ namespace LEARNING_CONCEPTS
 {
 	public static class Utility8
 	{
-		public static string ConvertMiladiToShamsi(System.DateTime time)
+		public static string ConvertMiladiToShamsi(System.DateTime dateTime)
 		{
 			System.Globalization.PersianCalendar
 				persianCalendar = new System.Globalization.PersianCalendar();
 
 			int year =
-				persianCalendar.GetYear(time);
+				persianCalendar.GetYear(dateTime);
 
 			int month =
-				persianCalendar.GetMonth(time);
+				persianCalendar.GetMonth(dateTime);
 
 			int day =
-				persianCalendar.GetDayOfMonth(time);
+				persianCalendar.GetDayOfMonth(dateTime);
 
 			// **************************************************
 			//string result =
@@ -203,19 +203,19 @@ namespace LEARNING_CONCEPTS
 {
 	public static class Utility
 	{
-		public static PersianDate ConvertMiladiToShamsi(System.DateTime time)
+		public static PersianDate ConvertMiladiToShamsi(System.DateTime dateTime)
 		{
 			System.Globalization.PersianCalendar
 				persianCalendar = new System.Globalization.PersianCalendar();
 
 			int year =
-				persianCalendar.GetYear(time);
+				persianCalendar.GetYear(dateTime);
 
 			int month =
-				persianCalendar.GetMonth(time);
+				persianCalendar.GetMonth(dateTime);
 
 			int day =
-				persianCalendar.GetDayOfMonth(time);
+				persianCalendar.GetDayOfMonth(dateTime);
 
 			// **************************************************
 			//PersianDate persianDate = new PersianDate();
