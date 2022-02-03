@@ -39,12 +39,10 @@
 			// **************************************************
 
 			// **************************************************
-			//string shamsi8 =
-			//	Utility8.ConvertMiladiToShamsi(System.DateTime.Now);
+			string shamsi8 =
+				Utility8.ConvertMiladiToShamsi(System.DateTime.Now);
 
-			//System.Console.WriteLine(shamsi8);
-
-			// shamsi8 = "1397/11/01"
+			System.Console.WriteLine(shamsi8);
 
 			//int monthInt =
 			//	System.Convert.ToInt32(shamsi8.Substring(startIndex: 5, length: 2));
@@ -65,10 +63,10 @@
 			// **************************************************
 			// **************************************************
 			// **************************************************
-			System.DateTime now = System.DateTime.Now;
+			//System.DateTime now = System.DateTime.Now;
 
-			PersianDate persianDate =
-				Utility.ConvertMiladiToShamsi(now);
+			//PersianDate persianDate =
+			//	Utility.ConvertMiladiToShamsi(now);
 			// **************************************************
 
 			// **************************************************
@@ -79,10 +77,10 @@
 			//	Utility.ConvertMiladiToShamsi(birthDate);
 			// **************************************************
 
-			System.Console.WriteLine(persianDate.GetString());
-			System.Console.WriteLine("Day: " + persianDate.Day);
-			System.Console.WriteLine("Month: " + persianDate.Month);
-			System.Console.WriteLine("Year: " + persianDate.Year);
+			//System.Console.WriteLine(persianDate.GetString());
+			//System.Console.WriteLine("Day: " + persianDate.Day);
+			//System.Console.WriteLine("Month: " + persianDate.Month);
+			//System.Console.WriteLine("Year: " + persianDate.Year);
 			// **************************************************
 			// **************************************************
 			// **************************************************

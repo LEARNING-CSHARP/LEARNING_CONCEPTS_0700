@@ -296,7 +296,8 @@ namespace LEARNING_CONCEPTS
 			// **************************************************
 
 			// **************************************************
-			//text = text.Trim();
+			//text =
+			//	text.Trim();
 
 			//return text;
 			// **************************************************
@@ -304,10 +305,11 @@ namespace LEARNING_CONCEPTS
 			// **************************************************
 			//if (text == null)
 			//{
-			//	return string.Empty;
+			//	return null;
 			//}
 
-			//text = text.Trim();
+			//text =
+			//	text.Trim();
 
 			//return text;
 			// **************************************************
@@ -315,10 +317,11 @@ namespace LEARNING_CONCEPTS
 			// **************************************************
 			//if (text == null)
 			//{
-			//	return string.Empty;
+			//	return null;
 			//}
 
-			//text = text.Trim();
+			//text =
+			//	text.Trim();
 
 			// روش احمقانه
 
@@ -333,10 +336,11 @@ namespace LEARNING_CONCEPTS
 			// **************************************************
 			if (text == null)
 			{
-				return string.Empty;
+				return null;
 			}
 
-			text = text.Trim();
+			text =
+				text.Trim();
 
 			while (text.Contains("  "))
 			{
