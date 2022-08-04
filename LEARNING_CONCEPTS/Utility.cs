@@ -148,13 +148,13 @@ namespace LEARNING_CONCEPTS
 				persianCalendar = new System.Globalization.PersianCalendar();
 
 			int year =
-				persianCalendar.GetYear(dateTime);
+				persianCalendar.GetYear(time: dateTime);
 
 			int month =
-				persianCalendar.GetMonth(dateTime);
+				persianCalendar.GetMonth(time: dateTime);
 
 			int day =
-				persianCalendar.GetDayOfMonth(dateTime);
+				persianCalendar.GetDayOfMonth(time: dateTime);
 
 			// **************************************************
 			//string result =
@@ -165,9 +165,6 @@ namespace LEARNING_CONCEPTS
 
 			//string result =
 			//	$"{year}/{month}/{day}";
-
-			//string result =
-			//	$"{ year }/{ month }/{ day }";
 
 			//return result;
 			// **************************************************
@@ -183,13 +180,15 @@ namespace LEARNING_CONCEPTS
 
 			// **************************************************
 			string dayString =
-				day.ToString().PadLeft(totalWidth: 2, paddingChar: '0');
+				day.ToString().PadLeft
+				(totalWidth: 2, paddingChar: '0');
 
 			string monthString =
-				month.ToString().PadLeft(totalWidth: 2, paddingChar: '0');
+				month.ToString().PadLeft
+				(totalWidth: 2, paddingChar: '0');
 
 			string result =
-				$"{ year }/{ monthString }/{ dayString }";
+				$"{year}/{monthString}/{dayString}";
 
 			return result;
 			// **************************************************
@@ -342,10 +341,16 @@ namespace LEARNING_CONCEPTS
 			text =
 				text.Trim();
 
-			while (text.Contains("  "))
+			if (text == string.Empty)
+			{
+				return null;
+			}
+
+			while (text.Contains(value: "  "))
 			{
 				text =
-					text.Replace("  ", " ");
+					text.Replace
+					(oldValue: "  ", newValue: " ");
 			}
 
 			return text;

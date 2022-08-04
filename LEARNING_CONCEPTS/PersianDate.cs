@@ -22,13 +22,15 @@
 		public string GetString()
 		{
 			string dayString =
-				Day.ToString().PadLeft(2, '0');
+				Day.ToString().PadLeft
+				(totalWidth: 2, paddingChar: '0');
 
 			string monthString =
-				Month.ToString().PadLeft(2, '0');
+				Month.ToString().PadLeft
+				(totalWidth: 2, paddingChar: '0');
 
 			string result =
-				$"{ Year }/{ monthString }/{ dayString }";
+				$"{Year}/{monthString}/{dayString}";
 
 			return result;
 		}

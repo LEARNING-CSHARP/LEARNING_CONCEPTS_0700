@@ -30,17 +30,17 @@
 			Utility1 utility1 = new Utility1();
 
 			string shamsi1 =
-				utility1.ConvertMiladiToShamsi(System.DateTime.Now);
+				utility1.ConvertMiladiToShamsi(dateTime: System.DateTime.Now);
 			// **************************************************
 
 			// **************************************************
 			string shamsi2 =
-				Utility2.ConvertMiladiToShamsi(System.DateTime.Now);
+				Utility2.ConvertMiladiToShamsi(dateTime: System.DateTime.Now);
 			// **************************************************
 
 			// **************************************************
 			string shamsi8 =
-				Utility8.ConvertMiladiToShamsi(System.DateTime.Now);
+				Utility8.ConvertMiladiToShamsi(dateTime: System.DateTime.Now);
 
 			System.Console.WriteLine(shamsi8);
 
@@ -75,7 +75,6 @@
 
 			//PersianDate persianDate =
 			//	Utility.ConvertMiladiToShamsi(birthDate);
-			// **************************************************
 
 			//System.Console.WriteLine(persianDate.GetString());
 			//System.Console.WriteLine("Day: " + persianDate.Day);
